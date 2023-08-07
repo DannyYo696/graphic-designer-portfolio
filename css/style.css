@@ -44,7 +44,10 @@ html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+  overflow-y: scroll;
+  overflow-x: hidden;
+  }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
@@ -57,6 +60,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
+  position: absolute;
   background-color: #fff; }
 
 [tabindex="-1"]:focus {
@@ -8174,7 +8178,7 @@ h1, h2, h3, h4, h5,
   @media (max-width: 991.98px) {
     .ftco-navbar-light {
       background: #000000 !important;
-      position: relative;
+      position: sticky;
       top: 0;
       padding-top: 0;
       padding-bottom: 0;
