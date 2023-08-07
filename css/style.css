@@ -219,7 +219,46 @@ select {
 
 select {
   word-wrap: normal; }
+.scroll-up {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  right: 40px;
+  bottom: 40px;
+  transition: .4s;
+  text-align: center;
+  z-index: 1; }
+  .scroll-up .fal {
+    background: #fb383b;
+    position: relative;
+    overflow: hidden;
+    font-weight: 500;
+    color: #fff;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    padding-right: 13px;
+    font-size: 16px; }
+  .scroll-up .fal:before {
+    content: "\f077";
+    font-family: "Font Awesome 5 Pro";
+    font-size: 16px;
+    position: absolute;
+    top: 100%;
+    transition: .4s; }
+  .scroll-up .fal:after {
+    content: "\f077";
+    font-family: "Font Awesome 5 Pro";
+    font-size: 16px;
+    position: absolute;
+    top: 36%;
+    transition: .4s; }
 
+.scroll-up:hover .fal:before {
+  top: 36%; }
+
+.scroll-up:hover .fal:after {
+  top: -157%; }
 button,
 [type="button"],
 [type="reset"],
